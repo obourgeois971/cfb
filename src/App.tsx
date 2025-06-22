@@ -314,9 +314,9 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
+              <div className="w-26 h-26 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
                 {/* <span className="text-2xl">💅</span> */}
-                <img src="ongles.png" alt="Nail Icon" className="w-18 h-18" />
+                <img src="ongles.png" alt="Nail Icon" className="w-22 h-22" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Onglerie</h3>
               <p className="text-gray-600 mb-4">
@@ -327,7 +327,7 @@ function App() {
             </div>
 
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
+              <div className="w-26 h-26 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
                 {/* <span className="text-2xl">👁️</span> */}
                 <img src="sourcils.png" alt="Nail Icon" className="w-18 h-18" />
               </div>
@@ -340,7 +340,7 @@ function App() {
             </div>
 
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
+              <div className="w-26 h-26 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
                 {/* <span className="text-2xl">👀</span> */}
                 <img src="cils.png" alt="Nail Icon" className="w-18 h-18" />
               </div>
