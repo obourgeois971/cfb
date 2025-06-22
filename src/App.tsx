@@ -235,8 +235,8 @@ function App() {
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Onglerie, sourcils et cils par une professionnelle passionnée.
-                Prenez rendez-vous dès maintenant.
+                Onglerie, cils et sourcils, un salon cocooning, où
+                professionnalisme, écoute et hygiène sont au rendez-vous.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
