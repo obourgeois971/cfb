@@ -41,7 +41,7 @@ function App() {
       },
       {
         name: 'Extension Gel',
-        description: 'Pose Gel sur demi-capsule/chablon',
+        description: 'Pose Gel sur demi-capsule',
         price: '54€',
         duration: '2h30',
       },
