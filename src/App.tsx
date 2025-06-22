@@ -216,6 +216,15 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
+              <div className="">
+                <img
+                  src="remise.png"
+                  // src="logo.jpg"
+                  alt="Offre d'ouverture -10%"
+                  className="w-200 lg:h-[100px] object-cover"
+                />
+              </div>
+
               <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
                 <Star className="w-4 h-4 fill-current" />
                 Offre d'ouverture -10%
@@ -265,8 +274,8 @@ function App() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  // src="sallon.jpg"
-                  src="logo.jpg"
+                  src="sallon.jpg"
+                  // src="logo.jpg"
                   alt="Manucure professionnelle"
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
@@ -533,10 +542,10 @@ function App() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              'https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/3997392/pexels-photo-3997392.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'ongle-01.png',
+              'ongle-02.jpg',
+              'sourcil-01.png',
+              'rehaussement-sourcils.jpg',
               'sallon.jpg',
               'https://images.pexels.com/photos/3997373/pexels-photo-3997373.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/3997376/pexels-photo-3997376.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -590,6 +599,14 @@ function App() {
               <div className="flex items-center gap-2 text-pink-400 mb-2">
                 <Star className="w-4 h-4 fill-current" />
                 <span className="text-sm">Offre d'ouverture -10%</span>
+              </div>
+              <div className="flex items-center gap-2 text-pink-400 mb-2">
+                <img
+                  src="remise.png"
+                  // src="logo.jpg"
+                  alt="Manucure professionnelle"
+                  className="w-full"
+                />
               </div>
             </div>
 
