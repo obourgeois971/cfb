@@ -232,7 +232,13 @@ function App() {
                   07 82 38 83 12
                 </button>
                 <button className="flex items-center justify-center gap-2 border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-pink-600 hover:text-pink-600 transition-colors">
-                  Voir les tarifs
+                  <a
+                    href="#tarifs"
+                    className="text-gray-700 hover:text-pink-600 transition-colors"
+                  >
+                    Voir les tarifs
+                  </a>
+
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
