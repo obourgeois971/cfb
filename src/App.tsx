@@ -7,7 +7,6 @@ import {
   Menu,
   X,
   ChevronRight,
-  Check,
   Heart,
   Shield,
   Award,
@@ -231,7 +230,7 @@ function App() {
               </div>
 
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Institut de beauté
+                Chez Franceska Beauté
                 <span className="text-pink-600 block">spécialisé</span>
               </h1>
 
