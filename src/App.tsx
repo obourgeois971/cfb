@@ -226,7 +226,7 @@ function App() {
 
               <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
                 <Star className="w-4 h-4 fill-current" />
-                Offre d'ouverture -10%
+                Offre d'ouverture -10% jusqu'au 26 juillet 2025
               </div>
 
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -547,9 +547,10 @@ function App() {
               'sourcil-01.png',
               'rehaussement-sourcils.jpg',
               'sallon.jpg',
-              'https://images.pexels.com/photos/3997373/pexels-photo-3997373.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/3997376/pexels-photo-3997376.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/3997377/pexels-photo-3997377.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'sourcil-02.jpg',
+              'sourcil-03.jpg',
+              'sourcil-04.jpg',
+              'sourcil-05.jpg',
             ].map((src, index) => (
               <div
                 key={index}
