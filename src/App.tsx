@@ -1,5 +1,17 @@
 import React, { useState } from 'react';
-import { Phone, MapPin, Clock, Star, Menu, X, ChevronRight, Check, Heart, Shield, Award } from 'lucide-react';
+import {
+  Phone,
+  MapPin,
+  Clock,
+  Star,
+  Menu,
+  X,
+  ChevronRight,
+  Check,
+  Heart,
+  Shield,
+  Award,
+} from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,85 +19,85 @@ function App() {
   const services = {
     onglerie: [
       {
-        name: "Pose Vernis semi-permanent",
-        description: "Pose complète vernis semi à couleur (Manucure incluse)",
-        price: "25€",
-        duration: "1h30",
-        popular: true
+        name: 'Pose Vernis semi-permanent',
+        description: 'Pose complète vernis semi à couleur (Manucure incluse)',
+        price: '25€',
+        duration: '1h30',
+        popular: true,
       },
       {
-        name: "Dépose + Pose complète",
-        description: "Pose Gel sur ongle naturel + couleur",
-        price: "30€",
-        duration: "2h"
+        name: 'Dépose + Pose complète',
+        description: 'Pose Gel sur ongle naturel + couleur',
+        price: '30€',
+        duration: '2h',
       },
       {
-        name: "French / Babyboomer",
-        description: "Finition élégante française (+4€) ou babyboomer (+8€)",
-        price: "à partir de 29€",
-        duration: "1h45"
+        name: 'French / Babyboomer',
+        description: 'Finition élégante française (+4€) ou babyboomer (+8€)',
+        price: 'à partir de 29€',
+        duration: '1h45',
       },
       {
-        name: "Extension Gel",
-        description: "Pose Gel sur demi-capsule/chablon",
-        price: "54€",
-        duration: "2h30"
+        name: 'Extension Gel',
+        description: 'Pose Gel sur demi-capsule/chablon',
+        price: '54€',
+        duration: '2h30',
       },
       {
-        name: "Nail Art",
-        description: "Effet miroir, nacré, ombré, marbré, 3D, berbère",
-        price: "5€/doigt",
-        duration: "30min"
-      }
+        name: 'Nail Art',
+        description: 'Effet miroir, nacré, ombré, marbré, 3D, berbère',
+        price: '5€/doigt',
+        duration: '30min',
+      },
     ],
     sourcils: [
       {
-        name: "Épilation sourcils",
-        description: "Épilation au fil ou à la pince",
-        price: "12€",
-        duration: "30min"
+        name: 'Épilation sourcils',
+        description: 'Épilation au fil ou à la pince',
+        price: '12€',
+        duration: '30min',
       },
       {
-        name: "Restructuration sourcils",
-        description: "Remodelage complet de la forme",
-        price: "24€",
-        duration: "45min",
-        popular: true
+        name: 'Restructuration sourcils',
+        description: 'Remodelage complet de la forme',
+        price: '24€',
+        duration: '45min',
+        popular: true,
       },
       {
-        name: "Forfait complet",
-        description: "Restructuration + Épilation + Henné brow",
-        price: "32€",
-        duration: "1h15"
-      }
+        name: 'Forfait complet',
+        description: 'Restructuration + Épilation + Henné brow',
+        price: '32€',
+        duration: '1h15',
+      },
     ],
     cils: [
       {
-        name: "Rehaussement cils",
-        description: "Lift naturel des cils (+10% teinture)",
-        price: "49€",
-        duration: "1h30",
-        popular: true
+        name: 'Rehaussement cils',
+        description: 'Lift naturel des cils (+10% teinture)',
+        price: '49€',
+        duration: '1h30',
+        popular: true,
       },
       {
-        name: "Extension cils classique",
-        description: "Pose individuelle cil par cil",
-        price: "55€",
-        duration: "2h"
+        name: 'Extension cils classique',
+        description: 'Pose individuelle cil par cil',
+        price: '55€',
+        duration: '2h',
       },
       {
-        name: "Volume Russe 2D-3D",
-        description: "Technique volume russe 2D-3D",
-        price: "65€",
-        duration: "2h30"
+        name: 'Volume Russe 2D-3D',
+        description: 'Technique volume russe 2D-3D',
+        price: '65€',
+        duration: '2h30',
       },
       {
-        name: "Volume Russe 4D-5D",
-        description: "Technique volume russe 4D-5D",
-        price: "75€",
-        duration: "3h"
-      }
-    ]
+        name: 'Volume Russe 4D-5D',
+        description: 'Technique volume russe 4D-5D',
+        price: '75€',
+        duration: '3h',
+      },
+    ],
   };
 
   const handleCall = () => {
@@ -103,21 +115,47 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-gray-900">Chez Franceska</h1>
+              <h1 className="text-xl font-bold text-gray-900">
+                Chez Franceska Beauté
+              </h1>
             </div>
-            
+
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-700 hover:text-pink-600 transition-colors">Services</a>
-              <a href="#tarifs" className="text-gray-700 hover:text-pink-600 transition-colors">Tarifs</a>
-              <a href="#galerie" className="text-gray-700 hover:text-pink-600 transition-colors">Galerie</a>
-              <a href="#contact" className="text-gray-700 hover:text-pink-600 transition-colors">Contact</a>
+              <a
+                href="#services"
+                className="text-gray-700 hover:text-pink-600 transition-colors"
+              >
+                Services
+              </a>
+              <a
+                href="#tarifs"
+                className="text-gray-700 hover:text-pink-600 transition-colors"
+              >
+                Tarifs
+              </a>
+              <a
+                href="#galerie"
+                className="text-gray-700 hover:text-pink-600 transition-colors"
+              >
+                Galerie
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-700 hover:text-pink-600 transition-colors"
+              >
+                Contact
+              </a>
             </nav>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
               <button onClick={toggleMenu} className="text-gray-700">
-                {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
 
@@ -135,10 +173,30 @@ function App() {
           {isMenuOpen && (
             <div className="md:hidden border-t border-gray-200">
               <div className="px-2 pt-2 pb-3 space-y-1">
-                <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-pink-600">Services</a>
-                <a href="#tarifs" className="block px-3 py-2 text-gray-700 hover:text-pink-600">Tarifs</a>
-                <a href="#galerie" className="block px-3 py-2 text-gray-700 hover:text-pink-600">Galerie</a>
-                <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-pink-600">Contact</a>
+                <a
+                  href="#services"
+                  className="block px-3 py-2 text-gray-700 hover:text-pink-600"
+                >
+                  Services
+                </a>
+                <a
+                  href="#tarifs"
+                  className="block px-3 py-2 text-gray-700 hover:text-pink-600"
+                >
+                  Tarifs
+                </a>
+                <a
+                  href="#galerie"
+                  className="block px-3 py-2 text-gray-700 hover:text-pink-600"
+                >
+                  Galerie
+                </a>
+                <a
+                  href="#contact"
+                  className="block px-3 py-2 text-gray-700 hover:text-pink-600"
+                >
+                  Contact
+                </a>
               </div>
             </div>
           )}
@@ -154,14 +212,14 @@ function App() {
                 <Star className="w-4 h-4 fill-current" />
                 Offre d'ouverture -10%
               </div>
-              
+
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Institut de beauté
                 <span className="text-pink-600 block">spécialisé</span>
               </h1>
-              
+
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Onglerie, sourcils et cils par une professionnelle passionnée. 
+                Onglerie, sourcils et cils par une professionnelle passionnée.
                 Prenez rendez-vous dès maintenant.
               </p>
 
@@ -185,8 +243,7 @@ function App() {
                   Sur rendez-vous
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  À domicile
+                  <MapPin className="w-4 h-4" />À domicile
                 </div>
               </div>
             </div>
@@ -200,9 +257,9 @@ function App() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
-              
+
               {/* Floating card */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 max-w-xs">
+              {/* <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 max-w-xs">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
                     <Heart className="w-6 h-6 text-pink-600" />
@@ -212,7 +269,7 @@ function App() {
                     <p className="text-sm text-gray-600">satisfaites</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -226,36 +283,42 @@ function App() {
               Nos spécialités
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Des prestations de qualité professionnelle pour sublimer votre beauté naturelle
+              Des prestations de qualité professionnelle pour sublimer votre
+              beauté naturelle
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
-                <span className="text-2xl">💅</span>
+                {/* <span className="text-2xl">💅</span> */}
+                <img src="ongles.png" alt="Nail Icon" className="w-18 h-18" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Onglerie</h3>
               <p className="text-gray-600 mb-4">
-                Manucure, pose de vernis semi-permanent, extensions gel et nail art créatif
+                Manucure, pose de vernis semi-permanent, extensions gel et nail
+                art créatif
               </p>
               <div className="text-pink-600 font-semibold">À partir de 25€</div>
             </div>
 
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
-                <span className="text-2xl">👁️</span>
+                {/* <span className="text-2xl">👁️</span> */}
+                <img src="sourcils.png" alt="Nail Icon" className="w-18 h-18" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Sourcils</h3>
               <p className="text-gray-600 mb-4">
-                Épilation, restructuration et teinture pour un regard parfaitement défini
+                Épilation, restructuration et teinture pour un regard
+                parfaitement défini
               </p>
               <div className="text-pink-600 font-semibold">À partir de 12€</div>
             </div>
 
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-200 transition-colors">
-                <span className="text-2xl">👀</span>
+                {/* <span className="text-2xl">👀</span> */}
+                <img src="cils.png" alt="Nail Icon" className="w-18 h-18" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Cils</h3>
               <p className="text-gray-600 mb-4">
@@ -281,20 +344,31 @@ function App() {
 
           {/* Onglerie */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Onglerie & Nail Art</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Onglerie & Nail Art
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.onglerie.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
+                >
                   {service.popular && (
                     <div className="absolute -top-3 left-6 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       Populaire
                     </div>
                   )}
                   <div className="flex justify-between items-start mb-3">
-                    <h4 className="font-semibold text-gray-900 text-lg">{service.name}</h4>
-                    <span className="text-xl font-bold text-pink-600">{service.price}</span>
+                    <h4 className="font-semibold text-gray-900 text-lg">
+                      {service.name}
+                    </h4>
+                    <span className="text-xl font-bold text-pink-600">
+                      {service.price}
+                    </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">{service.description}</p>
+                  <p className="text-gray-600 text-sm mb-3">
+                    {service.description}
+                  </p>
                   <div className="flex items-center gap-2 text-sm text-gray-500">
                     <Clock className="w-4 h-4" />
                     {service.duration}
@@ -306,20 +380,31 @@ function App() {
 
           {/* Sourcils */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Sourcils</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Sourcils
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.sourcils.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
+                >
                   {service.popular && (
                     <div className="absolute -top-3 left-6 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       Populaire
                     </div>
                   )}
                   <div className="flex justify-between items-start mb-3">
-                    <h4 className="font-semibold text-gray-900 text-lg">{service.name}</h4>
-                    <span className="text-xl font-bold text-pink-600">{service.price}</span>
+                    <h4 className="font-semibold text-gray-900 text-lg">
+                      {service.name}
+                    </h4>
+                    <span className="text-xl font-bold text-pink-600">
+                      {service.price}
+                    </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">{service.description}</p>
+                  <p className="text-gray-600 text-sm mb-3">
+                    {service.description}
+                  </p>
                   <div className="flex items-center gap-2 text-sm text-gray-500">
                     <Clock className="w-4 h-4" />
                     {service.duration}
@@ -331,20 +416,31 @@ function App() {
 
           {/* Cils */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Cils</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Cils
+            </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.cils.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative">
+                <div
+                  key={index}
+                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
+                >
                   {service.popular && (
                     <div className="absolute -top-3 left-6 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       Populaire
                     </div>
                   )}
                   <div className="flex justify-between items-start mb-3">
-                    <h4 className="font-semibold text-gray-900 text-lg">{service.name}</h4>
-                    <span className="text-xl font-bold text-pink-600">{service.price}</span>
+                    <h4 className="font-semibold text-gray-900 text-lg">
+                      {service.name}
+                    </h4>
+                    <span className="text-xl font-bold text-pink-600">
+                      {service.price}
+                    </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">{service.description}</p>
+                  <p className="text-gray-600 text-sm mb-3">
+                    {service.description}
+                  </p>
                   <div className="flex items-center gap-2 text-sm text-gray-500">
                     <Clock className="w-4 h-4" />
                     {service.duration}
@@ -370,9 +466,12 @@ function App() {
               <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-pink-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Hygiène irréprochable</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Hygiène irréprochable
+              </h3>
               <p className="text-gray-600">
-                Matériel stérilisé et protocoles d'hygiène stricts pour votre sécurité
+                Matériel stérilisé et protocoles d'hygiène stricts pour votre
+                sécurité
               </p>
             </div>
 
@@ -380,9 +479,12 @@ function App() {
               <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-pink-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Expertise professionnelle</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Expertise professionnelle
+              </h3>
               <p className="text-gray-600">
-                Formation certifiée et expérience dans les techniques les plus récentes
+                Formation certifiée et expérience dans les techniques les plus
+                récentes
               </p>
             </div>
 
@@ -390,9 +492,12 @@ function App() {
               <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-8 h-8 text-pink-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Satisfaction garantie</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Satisfaction garantie
+              </h3>
               <p className="text-gray-600">
-                Votre satisfaction est notre priorité, retouches offertes si nécessaire
+                Votre satisfaction est notre priorité, retouches offertes si
+                nécessaire
               </p>
             </div>
           </div>
@@ -413,16 +518,19 @@ function App() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              "https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997392/pexels-photo-3997392.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997372/pexels-photo-3997372.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997373/pexels-photo-3997373.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997376/pexels-photo-3997376.jpeg?auto=compress&cs=tinysrgb&w=400",
-              "https://images.pexels.com/photos/3997377/pexels-photo-3997377.jpeg?auto=compress&cs=tinysrgb&w=400"
+              'https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997392/pexels-photo-3997392.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997372/pexels-photo-3997372.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997373/pexels-photo-3997373.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997376/pexels-photo-3997376.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://images.pexels.com/photos/3997377/pexels-photo-3997377.jpeg?auto=compress&cs=tinysrgb&w=400',
             ].map((src, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-xl aspect-square">
+              <div
+                key={index}
+                className="relative group overflow-hidden rounded-xl aspect-square"
+              >
                 <img
                   src={src}
                   alt={`Réalisation ${index + 1}`}
@@ -442,7 +550,8 @@ function App() {
             Prête pour votre transformation ?
           </h2>
           <p className="text-xl text-pink-100 mb-8">
-            Réservez votre rendez-vous dès maintenant et profitez de -10% sur votre première prestation
+            Réservez votre rendez-vous dès maintenant et profitez de -10% sur
+            votre première prestation
           </p>
           <button
             onClick={handleCall}
