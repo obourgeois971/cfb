@@ -251,7 +251,7 @@ function App() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="sallon.jpg"
                   alt="Manucure professionnelle"
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
@@ -522,7 +522,7 @@ function App() {
               'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/3997392/pexels-photo-3997392.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/3997372/pexels-photo-3997372.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'sallon.jpg',
               'https://images.pexels.com/photos/3997373/pexels-photo-3997373.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/3997376/pexels-photo-3997376.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/3997377/pexels-photo-3997377.jpeg?auto=compress&cs=tinysrgb&w=400',
