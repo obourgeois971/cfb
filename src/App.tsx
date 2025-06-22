@@ -614,20 +614,8 @@ function App() {
                   <Clock className="w-4 h-4" />
                   <span>Sur rendez-vous uniquement</span>
                 </div>
-                <div className="text-sm text-gray-400">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61577032143752"
-                    className="text-pink-400 hover:underline"
-                  >
-                    Page Facebook: Franceska Beauté
-                  </a>
-                  https://www.facebook.com/profile.php?id=61577032143752 Page
-                  Facebook: Franceska Beauté
-                </div>
-
                 <div className="flex gap-4">
                   <Instagram className="w-6 h-6 text-pink-400 hover:text-pink-300 cursor-pointer" />
-
                   <a
                     href="https://www.facebook.com/profile.php?id=61577032143752"
                     className="text-pink-400 hover:underline"
