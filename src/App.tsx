@@ -319,10 +319,10 @@ function App() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Onglerie</h3>
               <p className="text-gray-600 mb-4">
-                Manucure, pose de vernis semi-permanent, extensions gel et nail
-                art créatif
+                Pose de vernis semi-permanent, extensions gel, acrygèl, pose
+                Américaine et nail art créatif
               </p>
-              <div className="text-pink-600 font-semibold">À partir de 25€</div>
+              {/* <div className="text-pink-600 font-semibold">À partir de 25€</div> */}
             </div>
 
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
@@ -332,10 +332,10 @@ function App() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Sourcils</h3>
               <p className="text-gray-600 mb-4">
-                Épilation, restructuration et teinture pour un regard
-                parfaitement défini
+                Épilation, restructuration, henna brow et teinture pour un
+                regard parfaitement défini
               </p>
-              <div className="text-pink-600 font-semibold">À partir de 12€</div>
+              {/* <div className="text-pink-600 font-semibold">À partir de 12€</div> */}
             </div>
 
             <div className="group bg-white border border-gray-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
@@ -345,9 +345,10 @@ function App() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Cils</h3>
               <p className="text-gray-600 mb-4">
-                Extensions, rehaussement et volume russe pour un regard intense
+                Rehaussement et Extensions des cils : cils à cils, pose mixte et
+                volume russe pour un regard intense
               </p>
-              <div className="text-pink-600 font-semibold">À partir de 49€</div>
+              {/* <div className="text-pink-600 font-semibold">À partir de 49€</div> */}
             </div>
           </div>
         </div>
