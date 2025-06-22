@@ -231,7 +231,7 @@ function App() {
 
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Chez Franceska Beauté
-                <span className="text-pink-600 block">spécialisé</span>
+                <span className="text-pink-600 block">un salon à domicile</span>
               </h1>
 
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
