@@ -267,6 +267,14 @@ function App() {
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />À domicile
                 </div>
+                <div className="flex items-center gap-1">
+                  <Clock className="w-4 h-4" />
+                  <span>
+                    Lun-Mar-Jeu-Ven 9h30-18h30
+                    <br />
+                    Sam 9h00-13h30
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -564,6 +572,49 @@ function App() {
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Opening Hours Section */}
+      <section className="px-4 py-16 bg-gradient-to-r from-pink-50 to-rose-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Horaires d'Ouverture
+            </h2>
+            <p className="text-gray-600">
+              Nous vous accueillons aux heures suivantes
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-md mx-auto">
+            <div className="space-y-4">
+              <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                <span className="font-medium text-gray-800">Lundi</span>
+                <span className="text-gray-600">9h30 - 18h30</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                <span className="font-medium text-gray-800">Mardi</span>
+                <span className="text-gray-600">9h30 - 18h30</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                <span className="font-medium text-gray-800">Mercredi</span>
+                <span className="text-red-500 font-medium">Fermé</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                <span className="font-medium text-gray-800">Jeudi</span>
+                <span className="text-gray-600">9h30 - 18h30</span>
+              </div>
+              <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                <span className="font-medium text-gray-800">Vendredi</span>
+                <span className="text-gray-600">9h30 - 18h30</span>
+              </div>
+              <div className="flex justify-between items-center py-2">
+                <span className="font-medium text-gray-800">Samedi</span>
+                <span className="text-gray-600">9h - 13h30</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
