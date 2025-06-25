@@ -26,6 +26,7 @@ const transporter = nodemailer.createTransport({
 
 // Fonction pour envoyer un email formaté
 const envoyerEmailContact = async (contact) => {
+  console.log('4');
   const htmlContent = `
     <!DOCTYPE html>
     <html>
@@ -94,7 +95,7 @@ const envoyerEmailContact = async (contact) => {
     </body>
     </html>
   `;
-
+  console.log('5');
   const mailOptions = {
     from: `"Site Franceska Beauté" <${process.env.EMAIL_USER}>`,
     to: process.env.EMAIL_TO,
@@ -102,7 +103,7 @@ const envoyerEmailContact = async (contact) => {
     html: htmlContent,
     replyTo: contact.email,
   };
-
+  console.log('6');
   try {
     await transporter.sendMail(mailOptions);
     console.log(
@@ -165,6 +166,18 @@ app.get('/api/health', (req, res) => {
 
 // Route pour créer un nouveau contact
 app.post('/api/contacts', async (req, res) => {
+  // log('🔗 Requête de création de contact reçue:', req.body);
+  console.log('🔗 Requête de création de contact reçue:', req.body);
+  console.log('1');
+  console.log('MONGODB_URI' + MONGODB_URI);
+  console.log('MONGODB_URI' + process.env.MONGODB_URI);
+  console.log('EMAIL_HOST' + process.env.EMAIL_HOST);
+  console.log('EMAIL_PORT' + process.env.EMAIL_PORT);
+  console.log('EMAIL_USER' + process.env.EMAIL_USER);
+  console.log('EMAIL_PASS' + process.env.EMAIL_PASS);
+  console.log('EMAIL_TO' + process.env.EMAIL_TO);
+  console.log('EMAIL_TO' + process.env.EMAIL_TO);
+
   try {
     const { nom, prenom, email, message } = req.body;
 
@@ -182,12 +195,13 @@ app.post('/api/contacts', async (req, res) => {
       email,
       message: message || '',
     });
-
+    console.log('2');
     // Sauvegarder en base de données
     const contactSauvegarde = await nouveauContact.save();
 
     // Envoyer l'email de notification
     try {
+      console.log('3');
       await envoyerEmailContact(contactSauvegarde);
     } catch (emailError) {
       console.error('⚠️ Contact sauvegardé mais email non envoyé:', emailError);
