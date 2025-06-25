@@ -236,6 +236,8 @@ app.post('/api/contacts', async (req, res) => {
 
 // Route pour récupérer tous les contacts (pour l'administration)
 app.get('/api/contacts', async (req, res) => {
+  log('🔗 Requête de récupération des contacts reçue');
+  console.log('🔗 Requête de récupération des contacts reçue');
   try {
     const contacts = await Contact.find().sort({ dateCreation: -1 });
     res.json(contacts);

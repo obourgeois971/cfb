@@ -675,7 +675,7 @@ function App() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="px-4 py-16 bg-white">
+      {/* <section className="px-4 py-16 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -802,7 +802,7 @@ function App() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Sections  */}
       <section className="py-16 bg-gradient-to-r from-pink-600 to-rose-600 text-white">
