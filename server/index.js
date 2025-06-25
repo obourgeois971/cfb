@@ -200,13 +200,13 @@ app.post('/api/contacts', async (req, res) => {
     const contactSauvegarde = await nouveauContact.save();
 
     // Envoyer l'email de notification
-    try {
-      console.log('3');
-      await envoyerEmailContact(contactSauvegarde);
-    } catch (emailError) {
-      console.error('⚠️ Contact sauvegardé mais email non envoyé:', emailError);
-      // On continue même si l'email échoue
-    }
+    // try {
+    //   console.log('3');
+    //   await envoyerEmailContact(contactSauvegarde);
+    // } catch (emailError) {
+    //   console.error('⚠️ Contact sauvegardé mais email non envoyé:', emailError);
+    //   // On continue même si l'email échoue
+    // }
 
     res.status(201).json({
       message: 'Contact enregistré avec succès!',
