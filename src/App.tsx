@@ -31,89 +31,170 @@ function App() {
     'idle' | 'success' | 'error'
   >('idle');
 
-  const services = {
-    onglerie: [
-      {
-        name: 'Pose Vernis semi-permanent',
-        description: 'Pose complète vernis semi à couleur (Manucure incluse)',
-        price: '25€',
-        duration: '1h30',
-        popular: true,
-      },
-      {
-        name: 'Dépose + Pose complète',
-        description: 'Pose Gel sur ongle naturel + couleur',
-        price: '30€',
-        duration: '2h',
-      },
-      {
-        name: 'French / Babyboomer',
-        description: 'Finition élégante française (+4€) ou babyboomer (+8€)',
-        price: 'à partir de 29€',
-        duration: '1h45',
-      },
-      {
-        name: 'Extension Gel',
-        description: 'Pose Gel sur demi-capsule',
-        price: '54€',
-        duration: '2h30',
-      },
-      {
-        name: 'Nail Art',
-        description: 'Effet miroir, nacré, ombré, marbré, 3D, berbère',
-        price: '5€/doigt',
-        duration: '30min',
-      },
-    ],
-    sourcils: [
-      {
-        name: 'Épilation sourcils',
-        description: 'Épilation au fil ou à la pince',
-        price: '12€',
-        duration: '30min',
-      },
-      {
-        name: 'Restructuration sourcils',
-        description: 'Remodelage complet de la forme',
-        price: '24€',
-        duration: '45min',
-        popular: true,
-      },
-      {
-        name: 'Forfait complet',
-        description: 'Restructuration + Épilation + Henné brow',
-        price: '32€',
-        duration: '1h15',
-      },
-    ],
-    cils: [
-      {
-        name: 'Rehaussement cils',
-        description: 'Lift naturel des cils (+10% teinture)',
-        price: '49€',
-        duration: '1h30',
-        popular: true,
-      },
-      {
-        name: 'Extension cils classique',
-        description: 'Pose individuelle cil par cil',
-        price: '55€',
-        duration: '2h',
-      },
-      {
-        name: 'Volume Russe 2D-3D',
-        description: 'Technique volume russe 2D-3D',
-        price: '65€',
-        duration: '2h30',
-      },
-      {
-        name: 'Volume Russe 4D-5D',
-        description: 'Technique volume russe 4D-5D',
-        price: '75€',
-        duration: '3h',
-      },
-    ],
-  };
+  const services = [
+    {
+      category: 'onglerie',
+      name: 'Pose Vernis semi-permanent / Gel sur ongle naturel',
+      description: 'Maison Posh + couleur',
+      price: '25€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Dépose + Pose complète',
+      description: 'French / Pose + couleur',
+      price: '30€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Dépose + Pose complète',
+      description: 'French / Pose + couleur',
+      price: '28€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Dépose + Pose complète',
+      description: '',
+      price: '30€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Pose Gel sur ongle naturel + couleur',
+      description: '',
+      price: '33€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Pose Gel sur ongle naturel + French / Babyboomer',
+      description: '',
+      price: '40€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Dépose + Pose complète (prix à partir de)',
+      description: '',
+      price: '40€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Rallongement gel (pose chez nous, 3 semaines, prix à partir de)',
+      description: '',
+      price: '38€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Extension Simple - Pose sur demi-capsule + couleur',
+      description: '',
+      price: '50€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Pose sur demi-capsule + French',
+      description: '',
+      price: '55€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Pose sur demi-capsule + Babyboomer',
+      description: '',
+      price: '60€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Dépose + Pose complète (à partir de)',
+      description: '',
+      price: '60€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Rallongement gel sur demi-capsule (pose chez nous, prix 3 semaines, prix à partir de)',
+      description: '',
+      price: '50€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Gel X / Pose américaine + couleur',
+      description: '',
+      price: '45€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Pose américaine + French',
+      description: '',
+      price: '50€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Pose américaine + Babyboomer',
+      description: '',
+      price: '55€',
+    },
+    {
+      category: 'onglerie',
+      name: 'Dépose + Pose complète (pose chez nous, prix à partir de)',
+      description: '',
+      price: '65€',
+    },
+    {
+      category: 'sourcils',
+      name: 'Épilation au fil / à la pince',
+      description: '',
+      price: '12€',
+    },
+    {
+      category: 'sourcils',
+      name: 'Restructuration sourcils',
+      description: '',
+      price: '25€',
+    },
+    {
+      category: 'sourcils',
+      name: 'Restructuration, épilation + soin henné',
+      description: '',
+      price: '32€',
+    },
+    {
+      category: 'cils',
+      name: 'Rehaussement cils',
+      description: '(+10% teinture)',
+      price: '40€',
+    },
+    {
+      category: 'cils',
+      name: 'Bouquet rehaussement cils + restructuration sourcils (sans henné ni teinture)',
+      description: '',
+      price: '55€',
+    },
+    {
+      category: 'cils',
+      name: 'Extension cils à cils effet naturel à partir de',
+      description: '',
+      price: '65€',
+    },
+    {
+      category: 'cils',
+      name: 'Pose cils mixte',
+      description: '',
+      price: '60€',
+    },
+    {
+      category: 'cils',
+      name: 'Rallongement (3 semaines) à partir de',
+      description: '',
+      price: '35€',
+    },
+    {
+      category: 'cils',
+      name: 'Extension volume russe 2D-3D à partir de',
+      description: '',
+      price: '75€',
+    },
+    {
+      category: 'cils',
+      name: 'Rallongement (3 semaines) à partir de',
+      description: '',
+      price: '50€',
+    },
+  ];
 
   const handleCall = () => {
     window.location.href = 'tel:+33782388312';
@@ -417,123 +498,109 @@ function App() {
         </div>
       </section>
 
-      {/* Detailed Services */}
-      <section id="tarifs" className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Services Section */}
+      <section id="tarifs" className="px-4 py-16 bg-white">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Nos tarifs
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Nos Prestations
             </h2>
-            <p className="text-xl text-gray-600">
-              Des prix transparents pour des prestations de qualité
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Un large éventail de soins pour sublimer vos ongles et vous faire
+              sentir belle
             </p>
           </div>
 
-          {/* Onglerie */}
+          {/* Onglerie - Nail Art */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Onglerie & Nail Art
+            <h3 className="text-2xl font-bold text-pink-600 mb-8 text-center">
+              Onglerie - Nail Art
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.onglerie.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
-                >
-                  {service.popular && (
-                    <div className="absolute -top-3 left-6 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      Populaire
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {services
+                .filter((service) => service.category === 'onglerie')
+                .map((service, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
+                  >
+                    <div className="text-center">
+                      <h4 className="font-bold text-gray-800 mb-3 text-lg">
+                        {service.name}
+                      </h4>
+                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="space-y-2">
+                        <div className="text-2xl font-bold text-pink-600">
+                          {service.price}
+                        </div>
+                      </div>
                     </div>
-                  )}
-                  <div className="flex justify-between items-start mb-3">
-                    <h4 className="font-semibold text-gray-900 text-lg">
-                      {service.name}
-                    </h4>
-                    <span className="text-xl font-bold text-pink-600">
-                      {service.price}
-                    </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">
-                    {service.description}
-                  </p>
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Clock className="w-4 h-4" />
-                    {service.duration}
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
 
           {/* Sourcils */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            <h3 className="text-2xl font-bold text-purple-600 mb-8 text-center">
               Sourcils
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.sourcils.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
-                >
-                  {service.popular && (
-                    <div className="absolute -top-3 left-6 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      Populaire
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {services
+                .filter((service) => service.category === 'sourcils')
+                .map((service, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
+                  >
+                    <div className="text-center">
+                      <h4 className="font-bold text-gray-800 mb-3 text-lg">
+                        {service.name}
+                      </h4>
+                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="space-y-2">
+                        <div className="text-2xl font-bold text-purple-600">
+                          {service.price}
+                        </div>
+                      </div>
                     </div>
-                  )}
-                  <div className="flex justify-between items-start mb-3">
-                    <h4 className="font-semibold text-gray-900 text-lg">
-                      {service.name}
-                    </h4>
-                    <span className="text-xl font-bold text-pink-600">
-                      {service.price}
-                    </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">
-                    {service.description}
-                  </p>
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Clock className="w-4 h-4" />
-                    {service.duration}
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
 
           {/* Cils */}
-          <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-indigo-600 mb-8 text-center">
               Cils
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.cils.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow relative"
-                >
-                  {service.popular && (
-                    <div className="absolute -top-3 left-6 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      Populaire
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services
+                .filter((service) => service.category === 'cils')
+                .map((service, index) => (
+                  <div
+                    key={index}
+                    className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
+                  >
+                    <div className="text-center">
+                      <h4 className="font-bold text-gray-800 mb-3 text-lg">
+                        {service.name}
+                      </h4>
+                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="space-y-2">
+                        <div className="text-2xl font-bold text-indigo-600">
+                          {service.price}
+                        </div>
+                      </div>
                     </div>
-                  )}
-                  <div className="flex justify-between items-start mb-3">
-                    <h4 className="font-semibold text-gray-900 text-lg">
-                      {service.name}
-                    </h4>
-                    <span className="text-xl font-bold text-pink-600">
-                      {service.price}
-                    </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-3">
-                    {service.description}
-                  </p>
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Clock className="w-4 h-4" />
-                    {service.duration}
-                  </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
