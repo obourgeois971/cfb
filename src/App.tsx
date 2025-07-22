@@ -500,7 +500,8 @@ function App() {
 
       {/* Services Section */}
       <section id="tarifs" className="px-4 py-16 bg-white">
-        <div className="max-w-6xl mx-auto">
+        <div className="bg-white text-gray-800 p-8 font-sans">
+          {/* <!-- Titre --> */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               Nos Prestations
@@ -511,98 +512,83 @@ function App() {
             </p>
           </div>
 
-          {/* Onglerie - Nail Art */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-pink-600 mb-8 text-center">
-              Onglerie - Nail Art
-            </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {services
-                .filter((service) => service.category === 'onglerie')
-                .map((service, index) => (
-                  <div
-                    key={index}
-                    className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
-                  >
-                    <div className="text-center">
-                      <h4 className="font-bold text-gray-800 mb-3 text-lg">
-                        {service.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                        {service.description}
-                      </p>
-                      <div className="space-y-2">
-                        <div className="text-2xl font-bold text-pink-600">
-                          {service.price}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+          {/* <!-- Grille responsive 5 colonnes sur desktop, 2 sur mobile --> */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+            {/* <!-- Exemple de cellule --> */}
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">Épilation au fil-à-pince</h2>
+              <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
+                Sourcil
+              </span>
+              <span className="ml-auto mt-2">→</span>
             </div>
-          </div>
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">Restructuration Complète</h2>
+              <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
+                Sourcil
+              </span>
+              <span className="ml-auto mt-2">→</span>
+            </div>
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">Teinture - Henne</h2>
+              <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
+                Sourcil
+              </span>
+              <span className="ml-auto mt-2">→</span>
+            </div>
 
-          {/* Sourcils */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-purple-600 mb-8 text-center">
-              Sourcils
-            </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              {services
-                .filter((service) => service.category === 'sourcils')
-                .map((service, index) => (
-                  <div
-                    key={index}
-                    className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
-                  >
-                    <div className="text-center">
-                      <h4 className="font-bold text-gray-800 mb-3 text-lg">
-                        {service.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                        {service.description}
-                      </p>
-                      <div className="space-y-2">
-                        <div className="text-2xl font-bold text-purple-600">
-                          {service.price}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">
+                VERNIS GEL -SEMI PERMANENT - NAIL ART ONGLES
+              </h2>
+              <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
+                Nail art
+              </span>
+              <span className="ml-auto mt-2">→</span>
             </div>
-          </div>
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">GEL X/POSE AMERICAINE</h2>
+              <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
+                ONGLES Nail art
+              </span>
+              <span className="ml-auto mt-2">→</span>
+            </div>
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">POP IT</h2>
+              <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
+                ONGLES Nail art
+              </span>
+              <span className="ml-auto mt-2">→</span>
+            </div>
 
-          {/* Cils */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-indigo-600 mb-8 text-center">
-              Cils
-            </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services
-                .filter((service) => service.category === 'cils')
-                .map((service, index) => (
-                  <div
-                    key={index}
-                    className="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
-                  >
-                    <div className="text-center">
-                      <h4 className="font-bold text-gray-800 mb-3 text-lg">
-                        {service.name}
-                      </h4>
-                      <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                        {service.description}
-                      </p>
-                      <div className="space-y-2">
-                        <div className="text-2xl font-bold text-indigo-600">
-                          {service.price}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">REHAUSSEMENT - TEINTURE</h2>
+              <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
+                CILS
+              </span>
+              <span className="ml-auto mt-2">→</span>
+            </div>
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">EXTENSION CILS A CILS</h2>
+              <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
+                CILS
+              </span>
+              <span className="ml-auto mt-2">→</span>
+            </div>
+            <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+              <h2 className="font-bold text-lg">VOLUME RUSSE</h2>
+              <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
+                CILS
+              </span>
+              <span className="ml-auto mt-2">→</span>
             </div>
           </div>
+          {/* <!-- Bouton "Voir plus" --> */}
+          {/* <div className="text-center mt-8">
+            <button className="border border-black rounded-full px-6 py-2 hover:bg-black hover:text-white transition">
+              Voir nos 72 autres services
+            </button>
+          </div> */}
         </div>
       </section>
 
