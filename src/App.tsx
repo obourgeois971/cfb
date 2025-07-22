@@ -557,7 +557,7 @@ function App() {
                 <span className="ml-auto mt-2">→</span>
               </div>
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-                <h2 className="font-bold text-lg">Pop It</h2>
+                <h2 className="font-bold text-lg">Extension en Gel / Pop It</h2>
                 <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
                   Ongles Nail art
                 </span>
