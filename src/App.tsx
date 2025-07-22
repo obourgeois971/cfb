@@ -710,7 +710,8 @@ function App() {
               </div>
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
                 <span className="font-medium text-gray-800">Mercredi</span>
-                <span className="text-red-500 font-medium">Fermé</span>
+                {/* <span className="text-red-500 font-medium">Fermé</span> */}
+                <span className="text-gray-600">9h30 - 18h30</span>
               </div>
               <div className="flex justify-between items-center py-2 border-b border-gray-100">
                 <span className="font-medium text-gray-800">Jeudi</span>
@@ -722,7 +723,7 @@ function App() {
               </div>
               <div className="flex justify-between items-center py-2">
                 <span className="font-medium text-gray-800">Samedi</span>
-                <span className="text-gray-600">9h - 13h30</span>
+                <span className="text-gray-600">9h - 15h00</span>
               </div>
             </div>
           </div>
