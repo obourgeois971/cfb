@@ -362,7 +362,7 @@ function App() {
 
               <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
                 <Star className="w-4 h-4 fill-current" />
-                valable jusqu'au 26 juillet 2025
+                valable jusqu'au 02 août 2025
               </div>
 
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
