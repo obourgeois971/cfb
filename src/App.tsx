@@ -539,46 +539,46 @@ function App() {
 
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
               <h2 className="font-bold text-lg">
-                VERNIS GEL -SEMI PERMANENT - NAIL ART ONGLES
+                Vernis Gel -Semi Permanent - Nail Art Ongles
               </h2>
               <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
-                Nail art
+                Ongles Nail art
               </span>
               <span className="ml-auto mt-2">→</span>
             </div>
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-              <h2 className="font-bold text-lg">GEL X/POSE AMERICAINE</h2>
+              <h2 className="font-bold text-lg">Gel X/Pose Américaine</h2>
               <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
-                ONGLES Nail art
+                Ongles Nail art
               </span>
               <span className="ml-auto mt-2">→</span>
             </div>
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-              <h2 className="font-bold text-lg">POP IT</h2>
+              <h2 className="font-bold text-lg">Pop It</h2>
               <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
-                ONGLES Nail art
+                Ongles Nail art
               </span>
               <span className="ml-auto mt-2">→</span>
             </div>
 
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-              <h2 className="font-bold text-lg">REHAUSSEMENT - TEINTURE</h2>
+              <h2 className="font-bold text-lg">Rehaussement - Teinture</h2>
               <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
-                CILS
+                Cils
               </span>
               <span className="ml-auto mt-2">→</span>
             </div>
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-              <h2 className="font-bold text-lg">EXTENSION CILS A CILS</h2>
+              <h2 className="font-bold text-lg">Extension cils-à-cils</h2>
               <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
-                CILS
+                Cils
               </span>
               <span className="ml-auto mt-2">→</span>
             </div>
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-              <h2 className="font-bold text-lg">VOLUME RUSSE</h2>
+              <h2 className="font-bold text-lg">Volume Russe</h2>
               <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
-                CILS
+                Cils
               </span>
               <span className="ml-auto mt-2">→</span>
             </div>
