@@ -513,8 +513,10 @@ function App() {
           </div>
 
           {/* <!-- Grille responsive 5 colonnes sur desktop, 2 sur mobile --> */}
+
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             {/* <!-- Exemple de cellule --> */}
+
             <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
               <h2 className="font-bold text-lg">Épilation au fil-à-pince</h2>
               <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
