@@ -669,6 +669,7 @@ function App() {
               'sourcil-02.jpg',
               'sourcil-03.jpg',
               'sourcil-04.jpg',
+              'ongles-03.jpg',
             ].map((src, index) => (
               <div
                 key={index}
