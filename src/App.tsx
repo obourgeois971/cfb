@@ -524,7 +524,7 @@ function App() {
                   Restructuration épilation Henné
                 </h2>
                 <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
-                  Sourcil
+                  Sourcils
                 </span>
                 <span className="ml-auto mt-2">30€</span>
               </div>
@@ -533,7 +533,7 @@ function App() {
                   Bouquet réhaussement Cils + Restructuration Sourcils
                 </h2>
                 <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
-                  Sourcil
+                  Sourcils
                 </span>
                 <span className="ml-auto mt-2">65€</span>
               </div>
