@@ -204,10 +204,6 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // const handleReservation = () => {
-  //   window.location.href = 'tel:+32471234567890';
-  // };
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -351,19 +347,19 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <div className="">
+              <div className="w-480">
                 <img
                   src="remise.png"
                   // src="logo.jpg"
                   alt="Offre d'ouverture -10%"
-                  className="w-200 lg:h-[100px] object-cover"
+                  className="w-1/2 h-1/2 object-cover"
                 />
               </div>
 
-              <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              {/* <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
                 <Star className="w-4 h-4 fill-current" />
                 valable jusqu'au 02 août 2025
-              </div>
+              </div> */}
 
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Chez Franceska Beauté
@@ -670,6 +666,7 @@ function App() {
               'sourcil-03.jpg',
               'sourcil-04.jpg',
               'ongles-03.jpg',
+              'sallon-01.jpg',
             ].map((src, index) => (
               <div
                 key={index}
