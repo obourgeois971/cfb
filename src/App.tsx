@@ -514,73 +514,79 @@ function App() {
               {/* <!-- Exemple de cellule --> */}
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
                 <h2 className="font-bold text-lg">Épilation au fil-à-pince</h2>
-                <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
+                {/* <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
                   Sourcil
-                </span>
-                <span className="ml-auto mt-2">→</span>
+                </span> */}
+                <span className="ml-auto mt-2">à partir de 12€</span>
               </div>
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-                <h2 className="font-bold text-lg">Restructuration Complète</h2>
+                <h2 className="font-bold text-lg">
+                  Restructuration épilation Henné
+                </h2>
                 <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
                   Sourcil
                 </span>
-                <span className="ml-auto mt-2">→</span>
+                <span className="ml-auto mt-2">30€</span>
               </div>
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-                <h2 className="font-bold text-lg">Teinture - Henne</h2>
+                <h2 className="font-bold text-lg">
+                  Bouquet réhaussement Cils + Restructuration Sourcils
+                </h2>
                 <span className="text-sm bg-yellow-300 font-semibold mt-2 px-1 inline-block w-max">
                   Sourcil
                 </span>
-                <span className="ml-auto mt-2">→</span>
+                <span className="ml-auto mt-2">65€</span>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto mb-8">
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-                <h2 className="font-bold text-lg">
-                  Vernis Gel -Semi Permanent - Nail Art Ongles
-                </h2>
-                <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
-                  Ongles Nail art
-                </span>
-                <span className="ml-auto mt-2">→</span>
-              </div>
-              <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-                <h2 className="font-bold text-lg">Gel X/Pose Américaine</h2>
-                <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
-                  Ongles Nail art
-                </span>
-                <span className="ml-auto mt-2">→</span>
-              </div>
-              <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
-                <h2 className="font-bold text-lg">Extension en Gel / Pop It</h2>
-                <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
-                  Ongles Nail art
-                </span>
-                <span className="ml-auto mt-2">→</span>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
                 <h2 className="font-bold text-lg">Rehaussement - Teinture</h2>
                 <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
                   Cils
                 </span>
-                <span className="ml-auto mt-2">→</span>
+                <span className="ml-auto mt-2">40€ (+10€ Teinture)</span>
               </div>
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
                 <h2 className="font-bold text-lg">Extension cils-à-cils</h2>
                 <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
                   Cils
                 </span>
-                <span className="ml-auto mt-2">→</span>
+                <span className="ml-auto mt-2">55€ (effet naturel)</span>
               </div>
               <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
                 <h2 className="font-bold text-lg">Volume Russe</h2>
                 <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
                   Cils
                 </span>
-                <span className="ml-auto mt-2">→</span>
+                <span className="ml-auto mt-2">65€ 2D/3D</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+              <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+                <h2 className="font-bold text-lg">
+                  Semi Permanent - pose complète
+                </h2>
+                <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
+                  Ongles Nail art
+                </span>
+                <span className="ml-auto mt-2">à partir de 25€</span>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+                <h2 className="font-bold text-lg">Gel X/Pose Américaine</h2>
+                <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
+                  Ongles Nail art
+                </span>
+
+                <span className="ml-auto mt-2">à partir de 49€</span>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-md shadow-sm hover:shadow-md flex flex-col justify-between">
+                <h2 className="font-bold text-lg">Gel sur ongle naturel</h2>
+                <span className="text-sm bg-pink-400 text-white font-semibold mt-2 px-1 inline-block w-max">
+                  Ongles Nail art
+                </span>
+                <span className="ml-auto mt-2">à partir de 39€</span>
               </div>
             </div>
           </div>
