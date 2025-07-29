@@ -559,7 +559,7 @@ function App() {
                 <span className="text-sm bg-blue-200 font-semibold mt-2 px-1 inline-block w-max">
                   Cils
                 </span>
-                <span className="ml-auto mt-2">65€ 2D/3D</span>
+                <span className="ml-auto mt-2">65€ (2D/3D)</span>
               </div>
             </div>
 
