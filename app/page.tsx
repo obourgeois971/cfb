@@ -150,13 +150,13 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full flex items-center justify-center">
+          <div className="flex justify-between items-center py-4 lg:py-6">
+            <div className="flex items-center space-x-3 text-gray-900 font-semibold text-lg lg:text-xl sm:grid-cols-4 sm:gap-4">
+              <div className="w-10 h-10 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-all duration-300 sm:w-12 sm:h-12">
                 <Star className="h-6 w-6 text-white" fill="currentColor" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent sm:text-3xl lg:text-4xl">
                   Chez Franceska Beauté
                 </h1>
                 <p className="text-sm text-gray-600">
@@ -164,13 +164,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Button
-              onClick={handleCall}
-              className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              <Phone className="h-4 w-4 mr-2" />
-              Appelez-nous
-            </Button>
+            <div className="flex items-center space-x-4 lg:space-x-6 sm:space-x-8 sm:text-lg sm:grid-cols-4 sm:gap-10">
+              <Button
+                onClick={handleCall}
+                className="bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <Phone className="h-4 w-4 mr-2" />
+                Appelez-nous
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -179,13 +181,13 @@ export default function Home() {
       <section className="relative bg-gradient-to-br from-pink-50 to-rose-50 py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
+            <div className="text-center lg:text-left space-y-6 lg:space-y-8 ">
               {/* <div className="inline-flex items-center gap-2 bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
                 <Star className="w-4 h-4 fill-current" />
                 valable jusqu'au 02 août 2025
               </div> */}
 
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight ">
                 Chez Franceska Beauté
                 <span className="text-pink-600 block">un salon à domicile</span>
               </h1>
@@ -317,7 +319,7 @@ export default function Home() {
 
           {/* Service Selector */}
           <div className="flex justify-center mb-12">
-            <div className="bg-white rounded-full p-2 shadow-lg">
+            <div className="bg-white rounded-full p-2 shadow-lg flex space-x-4 overflow-x-auto scrollbar-hide">
               {Object.entries(services).map(([key, service]) => (
                 <button
                   key={key}
@@ -491,7 +493,24 @@ export default function Home() {
               >
                 <Facebook className="h-6 w-6" />
               </button>
-              <button></button>
+              <button
+                className="text-gray-300 hover:text-white transition-colors duration-300"
+                onClick={() =>
+                  window.open(
+                    'https://g.page/r/CQmdxe_7aZeMEBk/review',
+                    '_blank'
+                  )
+                }
+              >
+                {/* <div className="h-12 w-22"> */}
+                {/* <img
+                    src="google-reviews.jpg"
+                    alt="Google Reviews"
+                    className="h-full w-full object-contain"
+                  /> */}
+                {/* </div> */}
+                <div className="">Laisser un avis sur Google</div>
+              </button>
             </div>
           </div>
         </div>
