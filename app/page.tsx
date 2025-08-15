@@ -473,7 +473,7 @@ export default function Home() {
                 className="text-gray-300 hover:text-white transition-colors duration-300"
                 onClick={() =>
                   window.open(
-                    'https://www.instagram.com/chezfranceskabeaute/',
+                    'https://www.instagram.com/chez_franceska_beaute?igsh=ZWNvcnpneWxpeDlo',
                     '_blank'
                   )
                 }
