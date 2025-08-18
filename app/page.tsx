@@ -261,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
             Votre beauté, notre passion
@@ -292,15 +292,6 @@ export default function Home() {
             >
               Voir nos réalisations
             </Button>
-          </div>
-
-          <div className="w-480 mt-12 mx-auto rounded-lg overflow-hidden shadow-lg bg-white/70 backdrop-blur-sm">
-            <img
-              src="remise.png"
-              // src="logo.jpg"
-              alt="Offre d'ouverture -10%"
-              className="w-1/2 h-1/2 object-cover mx-auto rounded-lg shadow-md transform hover:scale-105 transition-all duration-300"
-            />
           </div>
         </div>
       </section>
