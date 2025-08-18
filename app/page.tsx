@@ -261,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-10 px-4 sm:px-6 lg:px-8">
+      {/* <section className="relative py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
             Votre beauté, notre passion
@@ -294,7 +294,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
