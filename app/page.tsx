@@ -123,6 +123,9 @@ export default function Home() {
   };
 
   const galleryImages = [
+    'img-09.jpg',
+    'img-10.jpg',
+    'img-11.jpg',
     'ongle-01.png',
     'ongle-02.jpg',
     'sallon.jpg',
