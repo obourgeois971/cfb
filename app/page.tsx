@@ -64,7 +64,7 @@ export default function Home() {
         },
         {
           name: 'Dépose + Pose complète (posé chez nous, prix à partir de)',
-          price: '55€',
+          price: '60€',
           duration: '1h45',
         },
       ],
