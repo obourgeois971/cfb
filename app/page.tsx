@@ -19,18 +19,17 @@ export default function Home() {
   const services = {
     ongles: {
       title: 'ONGLERIE – NAIL’ART',
-      subtitle:
-        'Pose Vernis semi-permanent / Gel sur ongle naturel / Extension Ongle',
+      subtitle: '', // Pose Vernis semi-permanent / Gel sur ongle naturel / Extension Ongle
       treatments: [
         {
-          name: '(Mains / Pieds) Pose + couleur',
+          name: 'Pose Vernis semi-permanent (Mains / Pieds) + couleur simple',
           price: '25€',
           duration: '1h',
         },
         { name: 'Dépose + Pose complète', price: '30€', duration: '1h15' },
         {
-          name: 'Pose Gel sur ongle naturel + couleur',
-          price: '39€',
+          name: 'Pose Gel sur ongle naturel (gainage / renforcement) + couleur',
+          price: '40€',
           duration: '1h30',
         },
         {
@@ -39,34 +38,33 @@ export default function Home() {
           duration: '1h45',
         },
         {
-          name: 'Dépose + Pose complète (prix à partir de)',
-          price: '45€',
+          name: 'Extension en Gel',
+          price: '49€',
+          duration: '1h30',
+        },
+        {
+          name: 'Extension en Gel + French / Babyboomer',
+          price: '55€',
           duration: '1h45',
         },
         {
           name: 'Remplissage gel (posé chez nous, 3 semaines, prix à partir de)',
-          price: '35€',
+          price: '40€',
           duration: '1h30',
         },
-
         {
           name: '(Gel X) Pose américaine + couleur',
           price: '49€',
           duration: '1h30',
         },
         {
-          name: 'Pose américaine + French',
-          price: '54€',
-          duration: '1h45',
-        },
-        {
-          name: 'Pose américaine + Babyboomer',
-          price: '56€',
+          name: 'Pose américaine + French / Babyboomer',
+          price: '55€',
           duration: '1h45',
         },
         {
           name: 'Dépose + Pose complète (posé chez nous, prix à partir de)',
-          price: '56€',
+          price: '55€',
           duration: '1h45',
         },
       ],
@@ -76,24 +74,19 @@ export default function Home() {
       subtitle: '',
       treatments: [
         {
-          name: 'Epilation au fil/à la pince sourcils',
-          price: '10€',
-          duration: '15min',
-        },
-        {
-          name: 'Forfait Epilation sourcils, lèvre, menton',
-          price: '20€',
-          duration: '30min',
-        },
-        {
           name: 'Restructuration sourcils',
           price: '20€',
           duration: '45min',
         },
         {
-          name: 'Restructuration, épilation + pose henné',
+          name: 'Restructuration avec finition Henna Brow',
           price: '30€',
           duration: '1h',
+        },
+        {
+          name: 'Bouquet rehaussement cils+ restructuration sourcils ( + 15€ teinture et Henné)',
+          price: '65€',
+          duration: '2h',
         },
       ],
     },
@@ -107,11 +100,6 @@ export default function Home() {
           duration: '50min',
         },
         {
-          name: 'Bouquet rehaussement cils+ restructuration sourcils (sans henné ni teinture)',
-          price: '65€',
-          duration: '2h',
-        },
-        {
           name: 'Extension cils à cils effet naturel à partir de',
           price: '55€',
           duration: '1h30',
@@ -123,25 +111,30 @@ export default function Home() {
   };
 
   const galleryImages = [
-    'img-09.jpg',
+    // 'img-09.jpg',
     'img-10.jpg',
     'img-11.jpg',
     'ongle-01.png',
     'ongle-02.jpg',
-    'sallon.jpg',
+    // 'sallon.jpg',
     'sourcil-02.jpg',
     'sourcil-03.jpg',
     'sourcil-04.jpg',
     'ongles-03.jpg',
-    'sallon-01.jpg',
+    // 'sallon-01.jpg',
     'img-01.jpg',
-    'img-02.jpg',
+    // 'img-02.jpg',
     'img-03.jpg',
     'img-04.jpg',
-    'img-05.jpg',
-    'img-06.jpg',
+    // 'img-05.jpg',
+    // 'img-06.jpg',
     'img-07.jpg',
     'img-08.jpg',
+    'img-13.jpg',
+    'img-14.jpg',
+    'img-15.jpg',
+    'img-16.jpg',
+    'img-17.jpg',
   ];
 
   const handleCall = () => {
@@ -238,7 +231,8 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="sallon.jpg"
+                  // src="sallon.jpg"
+                  src="img-12.jpg"
                   // src="logo.jpg"
                   alt="Manucure professionnelle"
                   className="w-full h-96 lg:h-[500px] object-cover"
